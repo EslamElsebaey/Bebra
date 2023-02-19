@@ -54,7 +54,7 @@ $(".menu-bars").click(function(){
 // main Swiper 
 const mainSwiper = new Swiper('.mainBanner .swiper', {
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   draggable: true,
   navigation: {
     nextEl: ' .mainBanner .swiper-button-next',
@@ -81,7 +81,7 @@ const mainSwiper = new Swiper('.mainBanner .swiper', {
 
 const bestsellerSwiper = new Swiper(' .bestseller .swiper', {
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   draggable: true,
  
   pagination: {
@@ -114,7 +114,7 @@ const bestsellerSwiper = new Swiper(' .bestseller .swiper', {
 
 const specialOffers = new Swiper(' .special-offers .swiper', {
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   draggable: true,
  
   pagination: {
@@ -147,7 +147,7 @@ const specialOffers = new Swiper(' .special-offers .swiper', {
 
 const newArrivals = new Swiper(' .new-arrivals .swiper', {
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   draggable: true,
  
   pagination: {
@@ -179,7 +179,7 @@ const newArrivals = new Swiper(' .new-arrivals .swiper', {
 
 const bedRooms = new Swiper(' .bed-rooms .swiper', {
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   draggable: true,
  
   pagination: {
@@ -212,7 +212,7 @@ const bedRooms = new Swiper(' .bed-rooms .swiper', {
 
 const sofa = new Swiper(' .sofa .swiper', {
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   draggable: true,
  
   pagination: {
@@ -245,7 +245,7 @@ const sofa = new Swiper(' .sofa .swiper', {
 
 const  clientsReview = new Swiper(' .clients-reviews  .swiper', {
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   draggable: true,
  
   pagination: {

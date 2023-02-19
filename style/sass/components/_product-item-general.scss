@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #ffffff;
+    // background-color: #ffffff;
 }
 .like{
     width: 32px;
@@ -33,6 +33,7 @@
 }
 .item-desc{
     text-align: center;
+    background-color: #fff;
     width: 100%;
     padding: 20px 15px 15px 15px;
     border: 2px solid #f2f2f2;
@@ -115,12 +116,15 @@
     img{
         width: 100%;
         object-fit: cover;
+        display: block;
+        height: 100%;
     }
 }
 .product-hover{
     width: 100%;
     overflow: hidden;
     position: relative;
+    // background-color: #fff;
 }
 
 .bg-dark {

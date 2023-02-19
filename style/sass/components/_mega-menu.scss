@@ -59,14 +59,14 @@ transition: all linear .2s;
 }
 
 
-@include max-768 {
+@include max-992 {
     .mega-menu{
         position: static;
         opacity: 1;
         visibility: visible;
         filter: none;
         background-color: transparent;
-        padding: 0px 7px 0px 0px;
+        padding: 0px ;
     }
     .mega-img-holder{
         display: none !important;

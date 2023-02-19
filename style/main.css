@@ -610,6 +610,7 @@ nav {
   text-align: center;
   transition: all linear 0.2s;
   position: relative;
+  text-transform: capitalize;
 }
 .nav-ul > li > a:hover {
   text-decoration: none;
@@ -754,8 +755,8 @@ nav {
   }
   nav .nav-ul > li > a {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
     font-size: 16px;
   }
   nav .nav-ul > li > a:hover {
@@ -770,13 +771,15 @@ nav {
     align-items: center;
   }
 }
-@media only screen and (max-width: 767px) {
-  .nav-arrow-rotate::after {
-    transform: rotate(180deg) !important;
-  }
+@media only screen and (max-width: 991px) {
   .li-drop > a {
     line-height: initial;
   }
+  .nav-arrow-rotate::after {
+    transform: rotate(180deg) !important;
+  }
+}
+@media only screen and (max-width: 767px) {
   body {
     padding-top: 71.68px;
   }
@@ -945,6 +948,7 @@ nav {
 
 .feature-title {
   font-size: 14px;
+  line-height: 1.6;
   color: #000000;
   font-weight: 500;
   margin: 0;
@@ -956,15 +960,44 @@ nav {
   line-height: 20px;
   color: #000000;
   font-weight: 300;
+  margin: 0;
 }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 1300px) {
+  .features-parent {
+    -moz-column-gap: 110px;
+         column-gap: 110px;
+  }
+  html[dir=ltr] .feature-title {
+    min-height: 40px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .features-parent {
+    -moz-column-gap: 65px;
+         column-gap: 65px;
+    padding: 0 0px 45px 0px;
+  }
+}
+@media only screen and (max-width: 991px) {
   .features-parent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px 20px;
     padding: 0;
     padding-bottom: 45px;
+  }
+  html[dir=ltr] .feature-title {
+    min-height: auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .features-parent {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px 0;
+  }
+  .feature-title, html[dir=ltr] .feature-title {
+    min-height: auto;
   }
   .features {
     padding-top: 10px !important;
@@ -975,11 +1008,6 @@ nav {
   }
   .feature-icon i {
     font-size: 26px;
-  }
-  .feature-title {
-    line-height: 1.6;
-    height: 45px;
-    margin-bottom: 5px;
   }
 }
 footer {
@@ -1303,9 +1331,6 @@ html[dir=ltr] .send i {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .logo-info img {
-    width: 75px;
   }
   .social i {
     font-size: 18px;
@@ -1661,8 +1686,8 @@ html[dir=ltr] .send i {
   }
   .item-desc .brand-name {
     -webkit-line-clamp: 2;
-    margin-bottom: 10px;
-    height: 45px;
+    margin-bottom: 12px;
+    height: 41px;
     line-height: 1.4;
   }
   .discount-sec {
@@ -1939,14 +1964,14 @@ html[dir=ltr] .send i {
   transition: all linear 0.2s;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .mega-menu {
     position: static;
     opacity: 1;
     visibility: visible;
     filter: none;
     background-color: transparent;
-    padding: 0px 7px 0px 0px;
+    padding: 0px;
   }
   .mega-img-holder {
     display: none !important;

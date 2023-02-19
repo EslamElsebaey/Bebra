@@ -343,6 +343,7 @@ nav{
             text-align: center;
             transition: all linear .2s;
             position: relative;
+            text-transform: capitalize;
             &:hover{
                 text-decoration: none;
                 color: $second-color;
@@ -488,8 +489,8 @@ body{
         margin-inline-end: 0;
        > a{
               display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: center;
             font-size: 16px;
             &:hover{
                 color: $main-color;
@@ -508,13 +509,18 @@ body{
 }
 }
 
-@include max-768 {
-    .nav-arrow-rotate::after {
-        transform:   rotate(180deg)  !important;
-    }
+@include max-992{
     .li-drop > a{
         line-height: initial;
     }
+    .nav-arrow-rotate::after {
+        transform:   rotate(180deg)  !important;
+    }
+}
+
+@include max-768 {
+   
+    
     body{
         padding-top: 71.68px;
     }

@@ -191,12 +191,22 @@ font-weight: 700;
 
 
 @include max-768 {
+    .discount{
+        font-size: 10px;
+        width: 65px;
+        height: 20px;
+    }
     .add i{
         font-size: 20px;
     }
     .like{
-        width: 30px;
-        height: 30px;
+        width: 28px;
+        height: 28px;
+        top: 5px;
+        inset-inline-end: 5px;
+        i {
+            font-size: 19px;
+        }
     }
     .price .current-price , .price .deleted{
         font-size: 15px;
@@ -226,9 +236,14 @@ font-weight: 700;
     }
     .discount-sec{
         flex-direction: column;
+        top: 5px;
+        inset-inline-start: 5px;
     }
     .new-product{
         margin-top: 5px;
+        font-size: 10px;
+        width: 44px;
+        height: 20px;
     }
 }
 

@@ -1950,7 +1950,6 @@ html[dir=ltr] .send i {
 .mega-img-holder img {
   width: 100%;
   height: 100%;
-  vertical-align: unset;
   transition: all linear 0.2s;
 }
 

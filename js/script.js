@@ -1,11 +1,12 @@
+
+$(window).load(function(){
+  $(".preloader").fadeOut();
+})
+
+
+
 $(document).ready(function () { 
-       // preloader
-       setTimeout(function () {
-        $(".preloader").css({
-          opacity : "0" , 
-          visibility : "hidden" , 
-        })
-      }, 2000);
+    
   
 
 /***************************************************************************************** */
@@ -377,14 +378,15 @@ if($(window).width() < 768){
 // nested menus
 
 if($(window).width() <= 992) {  
-  $(".li-drop").click(function (e) {
+  $(".li-drop > .ancor-btn").click(function (e) {
+    console.log("ttt")
     e.preventDefault() ;
-    $(this).children().children(".mega-items-parent").slideToggle(300) ;
-    $(this).children(".ancor-btn").toggleClass("nav-arrow-rotate");
-    $(".li-drop").not($(this)).children(".ancor-btn").removeClass("nav-arrow-rotate");
-     $(".li-drop").not($(this)).children(".mega-menu").children(".mega-items-parent").slideUp(300)
+    $(this).siblings(".mega-menu").children(".mega-items-parent").slideToggle(300) ;
+    $(this).toggleClass("nav-arrow-rotate");
+    $(".li-drop > .ancor-btn ").not($(this)).removeClass("nav-arrow-rotate");
+     $(".li-drop > .ancor-btn").not($(this)).siblings(".mega-menu").children(".mega-items-parent").slideUp(300)
     })
-    $(".li-drop .ancor-btn").removeAttr("href")
+    $(".li-drop > .ancor-btn").removeAttr("href")
   }
 
 
